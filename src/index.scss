@@ -58,6 +58,11 @@ body {
     padding-top: 2.5rem !important;
     text-align: center !important;
     font-size: 1.5rem !important;
+    .nav-link {
+      .dot {
+        display: none;
+      }
+    }
   }
   #header .headerContent {
     height: 80vh !important;
@@ -110,6 +115,9 @@ body {
     .rightImg {
       display: none;
     }
+  }
+  .overlayImages {
+    display: none;
   }
 }
 @media (max-width: 768px) {
@@ -172,5 +180,8 @@ body {
   }
   #corpoLogos .corpoLogoHead {
     margin-bottom: 2rem !important;
+  }
+  #renataltd .renataText {
+    padding: 1.5rem !important;
   }
 }
