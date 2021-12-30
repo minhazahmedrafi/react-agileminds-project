@@ -1,0 +1,70 @@
+@import "../../App.scss";
+#famous {
+  .leftContent {
+    h1 {
+      font-weight: 800;
+      font-size: 72px;
+    }
+
+    .leftDetails {
+      .nav {
+        .nav-link {
+          margin: 0 !important;
+          padding: 0 !important;
+          border-bottom: 1px solid #e0e0e0;
+          font-weight: 800;
+          color: #a7a7a7;
+          padding: 0rem 3rem !important;
+          user-select: none;
+          padding-bottom: 1rem !important;
+          border-radius: 0px !important;
+          &.active,
+          .nav-pills .show > .nav-link {
+            color: $primaryColor;
+            font-weight: 800;
+            background-color: transparent !important;
+            position: relative;
+
+            &::after {
+              content: "";
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%);
+              bottom: -2.2px;
+              background: $primaryColor;
+              width: 40%;
+              height: 4px;
+              border-radius: 4px;
+            }
+          }
+        }
+      }
+      .tab-content {
+        margin-top: 2rem;
+        .persontInfo {
+          .personText {
+            p {
+              margin-bottom: 1.5rem !important;
+              text-align: justify;
+              padding-right: 2rem;
+            }
+            a {
+              @include primaryBtn();
+            }
+          }
+        }
+      }
+    }
+  }
+  .rightImg {
+    .mainImg {
+      position: relative;
+      .ovImg {
+        position: absolute;
+        bottom: 0;
+        right: 51%;
+        top: 48%;
+      }
+    }
+  }
+}

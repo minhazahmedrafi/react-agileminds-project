@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+body {
+  background: #f4f4f4f4 !important;
+}
+
+@media (max-width: 1400px) {
+  #famous .rightImg .mainImg .ovImg {
+    position: absolute;
+    bottom: 0;
+    right: 59% !important;
+    top: 48% !important;
+  }
+}
+@media (max-width: 1200px) {
+  #corpoLogos {
+    .overlayAll {
+      display: none;
+    }
+    .corpoSecurity {
+      position: relative;
+      .rotateHead {
+        transform: rotate(0deg) !important;
+        position: unset !important;
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+      }
+      .compactLogo {
+        margin-left: 0rem !important;
+      }
+    }
+    .rightSec {
+      .allLogos {
+        margin-left: 0.8rem !important;
+      }
+    }
+    .bottomLogos {
+      margin-top: 0rem !important;
+    }
+    .lastLogos {
+      .singleImg {
+        margin-left: 0rem !important;
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+  .navbar {
+    padding-top: 2.5rem !important;
+    text-align: center !important;
+    font-size: 1.5rem !important;
+  }
+  #header .headerContent {
+    height: 80vh !important;
+  }
+  #corporation {
+    .corpoRight {
+      margin-top: 5rem;
+    }
+  }
+  #bricFounder .founderInfo {
+    display: unset !important;
+    .founderText {
+      padding-right: 0rem !important;
+      padding-left: 0rem !important;
+      margin: 3rem 0;
+    }
+  }
+  #bricFounder .founderInfo .founderImg::after {
+    display: none;
+  }
+  .founder02 {
+    .bricHead {
+      margin-bottom: 3rem;
+    }
+    .founderInfo {
+      margin-top: 3rem;
+      display: flex;
+      align-items: center;
+      .founderImg {
+        text-align: end;
+      }
+    }
+    .ovBorder {
+      position: absolute;
+      right: -1.8rem !important;
+      top: -1.5rem;
+    }
+  }
+  .singleperson .persontInfo .personHead .name {
+    margin-top: 1rem;
+    font-size: 34px !important;
+  }
+  .singleperson .personImg {
+    margin-top: 2rem;
+  }
+  .overviewOverlay {
+    display: none;
+  }
+  .famous {
+    .rightImg {
+      display: none;
+    }
+  }
+}
+@media (max-width: 768px) {
+  #bricFounder .founderInfo .founderImg .ovBorder {
+    display: none;
+  }
+  #famous {
+    .leftDetails {
+      li.nav-item {
+        margin: 1rem 0;
+      }
+    }
+  }
+  #overview .overviewContent .headline h1 {
+    font-size: 50px !important;
+  }
+}
+@media (max-width: 576px) {
+  #header .headerContent .headerBannerContent h2 {
+    font-size: 30px !important;
+  }
+  #header .headerContent .headerBannerContent h1 {
+    font-size: 50px !important;
+  }
+  #corporation .corpoRight .secHeader h2 {
+    font-size: 30px !important;
+    line-height: 40px !important;
+  }
+  #corpoLogos .corpoSecurity .rotateHead {
+    padding: 1.5rem 1.5rem !important;
+    height: 65px !important;
+    width: 310px !important;
+  }
+  #corpoLogos .corpoLogoHead a {
+    font-size: 30px !important;
+  }
+  #corporation .corpoRight .secHeader p {
+    font-size: 18px !important;
+    line-height: 29px !important;
+    transform: rotate(0deg) !important;
+  }
+  #corporation .corpoRight .secHeader {
+    display: unset !important;
+  }
+  #corporation .corpoRight .secHeader p {
+    display: none;
+  }
+  #overview .overviewContent .headline h1 {
+    font-size: 38px !important;
+    line-height: 50px !important;
+  }
+  #famous .leftContent h1 {
+    font-size: 45px !important;
+  }
+  #footer .fHead {
+    font-size: 45px !important;
+  }
+  #corpoLogos .corpoSecurity .rotateHead h4 {
+    font-size: 15px !important;
+  }
+  #corpoLogos .corpoLogoHead {
+    margin-bottom: 2rem !important;
+  }
+}

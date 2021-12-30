@@ -1,0 +1,64 @@
+@import "../../App.scss";
+#bricSlider {
+  background: #fff;
+  position: relative;
+
+  .singleSlider {
+    .img-fluid {
+      height: 100%;
+      width: 100%;
+      position: relative;
+    }
+
+    .brictxt {
+      background: $linearBg;
+      font-size: 36px;
+      line-height: 49px;
+      color: #fff;
+      padding: 0.6rem 3rem 0.2rem 0.6rem;
+    }
+    h1 {
+      font-weight: 800;
+      font-size: 96px;
+      line-height: 96px;
+      color: #92c13e;
+      margin: 3rem 0rem;
+    }
+    .personDetails {
+      text-align: center;
+      background: $linearBg;
+      padding: 1.5rem 2rem;
+      border-radius: 5px;
+      width: 85%;
+      position: absolute;
+      bottom: -4rem;
+      left: 50%;
+      transform: translateX(-50%);
+      .hrColor {
+        background-color: #fff;
+        height: 1px;
+        opacity: 1;
+      }
+      p {
+        font-weight: 600;
+        font-size: 16px;
+        color: #fff;
+      }
+      span {
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 14px;
+        text-align: center;
+        color: #fff;
+      }
+    }
+  }
+  .swiper {
+    padding-bottom: 10rem;
+    .swiper-pagination-bullet {
+      background: $linearBg;
+      height: 12px;
+      width: 12px;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+@import "../../App.scss";
+#corporation {
+  .corpoLeft {
+    .corpoImage {
+      position: relative;
+      img {
+        width: 100%;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 200px;
+        width: 100%;
+        background: #fdfdfd;
+        opacity: 0.8;
+        border-radius: 5px;
+      }
+      .innerLogo {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        z-index: 999;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .corpoRight {
+    .secHeader {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      h2 {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 49px;
+        color: $primaryColor;
+        text-align: end;
+      }
+      p {
+        font-weight: bold;
+        font-size: 21px;
+        line-height: 29px;
+        letter-spacing: 0.03em;
+        transform: rotate(90deg);
+        color: #000000;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          height: 15px;
+          width: 100%;
+          background: $linearBg;
+          left: 0;
+          top: -150%;
+        }
+      }
+    }
+    .corpoContent {
+      margin-top: 3rem;
+      text-align: justify;
+    }
+  }
+  .corpoBottom {
+    .corpoLeft {
+      .corpoImage {
+        &::after {
+          background: #282828 !important;
+          opacity: 0.6 !important;
+        }
+        .innerLogo {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+    margin-top: 4rem;
+    .secHeader {
+      flex-direction: row-reverse;
+      p {
+        transform: rotate(-90deg);
+      }
+      h2 {
+        color: #92c13e;
+        text-align: left;
+      }
+    }
+  }
+}

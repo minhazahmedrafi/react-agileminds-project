@@ -1,0 +1,62 @@
+@import "../../App.scss";
+#renataltd {
+  background: url("../../images/renataLTD/renataBG.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 6rem 0rem;
+  z-index: 999;
+  &::after {
+    content: "";
+    position: absolute;
+    background: #1d1d1d;
+    opacity: 0.85;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -999;
+  }
+  .renatalHead {
+    display: flex;
+    align-items: center;
+    h2 {
+      background: $linearBg;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 800;
+      font-size: 36px;
+      margin: 0;
+      margin-left: 2rem;
+    }
+  }
+  .renataText {
+    background: #fff;
+    padding: 3.5rem;
+    margin-top: 3rem;
+    z-index: 999;
+  }
+  .renatalov1 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -99;
+    width: 60%;
+  }
+  .renatalov2 {
+    position: absolute;
+    left: 55%;
+    top: 15%;
+  }
+  .renatalov3 {
+    position: absolute;
+    left: 6%;
+    top: 70%;
+  }
+  .renatalov4 {
+    position: absolute;
+    right: 32%;
+    top: 40%;
+    z-index: -99;
+  }
+}

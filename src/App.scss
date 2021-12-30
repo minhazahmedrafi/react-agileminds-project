@@ -1,0 +1,31 @@
+$primaryColor: #f05e5e;
+$linearBg: linear-gradient(336.48deg, #ef4d84 15.16%, #f47929 122.41%);
+
+@mixin primaryBtn {
+  background: $linearBg;
+  border-radius: 5px;
+  padding: 0.8rem 2.5rem;
+  color: #fff !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  &:hover {
+    background: linear-gradient(327.27deg, #ffffff -149.55%, #ffffff 315.39%);
+    color: #000 !important;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+}
+a {
+  text-decoration: none !important;
+  color: unset !important;
+}
+section {
+  padding: 6rem 0rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000000;
+}

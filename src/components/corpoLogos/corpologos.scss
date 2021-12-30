@@ -1,0 +1,154 @@
+@import "../../App.scss";
+#corpoLogos {
+  background-color: #fff;
+  position: relative;
+  z-index: 999;
+  .corpoLogoHead {
+    margin-bottom: 6rem;
+    h4 {
+      font-weight: 700;
+      font-size: 36px;
+      letter-spacing: 0.04em;
+      background: $linearBg;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 2rem;
+    }
+    a {
+      background: $linearBg;
+      padding: 1.5rem 4rem;
+      border-radius: 5px;
+      font-size: 48px;
+      font-weight: 800;
+      color: #fff !important;
+      cursor: default;
+    }
+  }
+  .corpoSecurity {
+    position: relative;
+    .rotateHead {
+      background: #3d6297;
+      color: #ffffff;
+      padding: 1rem 1.5rem;
+      text-align: center;
+      transform: rotate(-90deg);
+      position: absolute;
+      left: -10.4rem;
+      top: 9.5rem;
+      height: 68px;
+      width: 400px;
+      h4 {
+        font-size: 21px;
+        font-weight: bold;
+        color: #fff;
+      }
+    }
+    .compactLogo {
+      background: #ffffff;
+      box-shadow: 0px 1px 25px -1px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      padding: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5.7rem;
+    }
+  }
+  .rightSec {
+    .rotateHead {
+      background: #afcb08;
+    }
+    .allLogos {
+      margin-left: 6.5rem;
+      .singleImg {
+        margin-right: 1.5rem;
+        margin-bottom: 1.5rem;
+        width: 145px;
+        height: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  .bottomLogos {
+    margin-top: 5rem;
+    .rightSec2 {
+      .rotateHead {
+        background: #009bac;
+      }
+    }
+    .rightSec3 {
+      .rotateHead {
+        background: $linearBg;
+      }
+    }
+    .rightSec4 {
+      .rotateHead {
+        background: #2daae1;
+      }
+    }
+  }
+  .lastLogos {
+    margin: 0rem !important;
+    .singleImg {
+      width: 262px !important;
+      height: 170px !important;
+      padding: 1rem;
+      margin-left: 6.5rem;
+    }
+  }
+  .overlayAll {
+    .overlay01 {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -999;
+    }
+    .overlay02 {
+      position: absolute;
+      left: 4%;
+      top: 35%;
+    }
+    .overlay03 {
+      position: absolute;
+      left: 4%;
+      top: 6%;
+    }
+    .overlay04 {
+      position: absolute;
+      bottom: 25%;
+      left: 4%;
+    }
+    .overlay05 {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 15%;
+    }
+    .overlay06 {
+      position: absolute;
+      right: 24%;
+      top: 14%;
+    }
+    .overlay07 {
+      position: absolute;
+      right: 10%;
+      top: 30%;
+    }
+    .overlay08 {
+      position: absolute;
+      right: 6%;
+      bottom: 40%;
+    }
+    .overlay09 {
+      position: absolute;
+      bottom: 16%;
+      right: 2%;
+    }
+  }
+}

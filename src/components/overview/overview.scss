@@ -1,0 +1,128 @@
+@import "../../App.scss";
+#overview {
+  background: url("../../images/overview/overviewBG.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 999;
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: $linearBg;
+    opacity: 0.9;
+    z-index: -999;
+  }
+
+  .overviewContent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    .ovIcon {
+      height: 80px;
+      width: 80px;
+      line-height: 80px;
+      background: rgba(255, 255, 255, 0.589);
+      border-radius: 50%;
+      position: relative;
+      margin-bottom: 3rem;
+      .playIcon {
+        font-size: 2.2rem;
+        color: #fff;
+        z-index: 999;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        right: 50%;
+        bottom: 50%;
+        transform: translate(-50%, -50%);
+        width: 130%;
+        height: 130%;
+        opacity: 0.5;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        right: 50%;
+        bottom: 50%;
+        transform: translate(-50%, -50%);
+        width: 160%;
+        height: 160%;
+        opacity: 0.5;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+      }
+    }
+    .ovbtn {
+      a {
+        background: #fff;
+        padding: 0.4rem 1rem;
+        border-radius: 5px;
+        font-weight: 800;
+        font-size: 16px;
+        color: #ef4d84 !important;
+        transition: all 0.2s ease;
+        &:hover {
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+            rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+      }
+    }
+    .headline {
+      margin-top: 2rem;
+      h1 {
+        font-weight: 800;
+        font-size: 72px;
+        line-height: 78px;
+        text-align: center;
+        color: #ffffff;
+        margin: 0;
+      }
+    }
+  }
+  .overviewOverlay {
+    z-index: -999;
+    .ov1 {
+      position: absolute;
+      top: 40%;
+      left: 10%;
+    }
+    .ov2 {
+      position: absolute;
+      bottom: 35%;
+      left: 16%;
+    }
+    .ov3 {
+      position: absolute;
+      top: 15%;
+      left: 20%;
+    }
+    .ov4 {
+      position: absolute;
+      top: 40%;
+      left: 60%;
+    }
+    .ov5 {
+      position: absolute;
+      left: 70%;
+      top: 20%;
+    }
+    .ov6 {
+      position: absolute;
+      left: 70%;
+    }
+  }
+}

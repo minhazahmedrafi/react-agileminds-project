@@ -1,0 +1,128 @@
+@import "../../App.scss";
+#footer {
+  padding: 6rem 0;
+  background: url("../../images/footerBg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  z-index: 999;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: #f8f8f8;
+    opacity: 0.8;
+    z-index: -999;
+  }
+  .fHead {
+    font-weight: 800;
+    font-size: 72px;
+    margin-bottom: 2rem;
+  }
+  .leftForm {
+    .mainForm {
+      input,
+      textarea {
+        padding: 1.4rem 1rem;
+        box-shadow: none;
+        margin-bottom: 35px;
+        border: 0;
+        &::placeholder {
+          font-size: 14px;
+          color: #a7a7a7;
+        }
+      }
+      .number,
+      .email {
+        position: relative;
+        .innerIcon {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 0.2rem;
+          width: 64px;
+          height: 60px;
+          background: $linearBg;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .mobileIcon {
+          font-size: 1.8rem;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .rightAddress {
+    .singleAddress {
+      text-align: center;
+      background: #fff;
+      border-radius: 5px;
+      min-height: 199px;
+      padding: 0 0.4rem;
+      padding-top: 1.5rem;
+      h4 {
+        font-weight: 800;
+        font-size: 18px;
+        margin-top: 1rem;
+      }
+      a {
+        font-size: 12px;
+        color: #a7a7a7 !important;
+      }
+    }
+  }
+}
+.copyRight {
+  border-top: 1px solid $primaryColor;
+  .copyContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    .left {
+      p {
+        margin: 0 !important;
+        font-weight: 600;
+        font-size: 16px;
+      }
+      .agileMind {
+        color: $primaryColor !important;
+      }
+    }
+    .right {
+      .icons {
+        display: flex;
+        .icon {
+          height: 25px;
+          width: 25px;
+          text-align: center;
+          line-height: 22px;
+          background: $primaryColor;
+          margin-left: 1rem;
+          border-radius: 5px;
+          color: #fff !important;
+        }
+        .facebook {
+          background: #4267b2;
+        }
+        .skype {
+          background: #00aff0;
+        }
+        .twitter {
+          background: #1da1f2;
+        }
+        .interest {
+          background: #e60023;
+        }
+      }
+    }
+  }
+}

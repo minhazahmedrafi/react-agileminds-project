@@ -1,0 +1,68 @@
+@import "../../App.scss";
+.mainNav {
+  .topNav {
+    padding: 25px 0px;
+    border-bottom: 1px solid #c4c4c4;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 50%;
+      height: 100%;
+      width: 1px;
+      background-color: #c4c4c4;
+    }
+    .topLeft {
+      margin-right: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .phone {
+        p {
+          padding: 0;
+          margin: 0;
+          color: #fff;
+        }
+      }
+    }
+    .topRight {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 2rem;
+      .email {
+        p {
+          color: #fff;
+          padding: 0;
+          margin: 0;
+        }
+      }
+      .topRightBtn {
+        .getBtn {
+          @include primaryBtn();
+        }
+      }
+    }
+  }
+  .bottomNav {
+    .navbar-nav {
+      z-index: 999;
+      .nav-item {
+        .nav-link {
+          color: #fff !important;
+          margin-right: 1rem;
+          transition: all 0.3s ease;
+          .dot {
+            font-size: 2rem;
+            color: $primaryColor;
+          }
+          &:hover {
+            color: $primaryColor !important;
+          }
+        }
+      }
+    }
+  }
+}

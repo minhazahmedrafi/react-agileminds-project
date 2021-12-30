@@ -1,0 +1,37 @@
+@import "../../App.scss";
+.singleperson {
+  background: #fff;
+  .persontInfo {
+    .personHead {
+      .name {
+        font-weight: 700;
+        font-size: 23px;
+      }
+    }
+    .personText {
+      p {
+        margin-bottom: 2rem;
+        font-size: 14px;
+      }
+      a {
+        @include primaryBtn();
+      }
+    }
+  }
+  .personImg {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+      height: 19px;
+      width: 100%;
+      background: $linearBg;
+      border-radius: 5px;
+    }
+  }
+}
+.singleperson2 {
+  background: unset;
+}
