@@ -47,6 +47,14 @@
     }
   }
   .bottomNav {
+    .navbar-toggler {
+      box-shadow: none;
+      background: $linearBg;
+      .barIcon {
+        color: #fff !important;
+        font-size: 2rem;
+      }
+    }
     .navbar-nav {
       z-index: 999;
       .nav-item {

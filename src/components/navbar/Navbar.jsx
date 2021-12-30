@@ -3,6 +3,7 @@ import images from "../../images/AllExports";
 import "./navbar.scss";
 import { BsDot } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { AiOutlineAlignRight } from "react-icons/ai";
 
 const Navbar = () => {
   return (
@@ -57,7 +58,7 @@ const Navbar = () => {
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span className="navbar-toggler-icon"></span>
+                <AiOutlineAlignRight className="barIcon" />
               </button>
               <div
                 className="collapse navbar-collapse"
